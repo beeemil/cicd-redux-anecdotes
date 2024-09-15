@@ -2,6 +2,6 @@
 
 echo "Build script"
 
-npm ci
+npm install
 
 npm run build

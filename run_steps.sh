@@ -4,4 +4,4 @@ echo "Run script"
 
 npm run server
 
-npm run preview
+npm run start
