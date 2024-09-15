@@ -1,10 +1,14 @@
 const express = require('express')
+const { createProxyMiddleware } = require('http-proxy-middleware');
+
 const app = express()
 
 // get the port from env variable
 const PORT = process.env.PORT || 5000
 
 app.use(express.static('dist'))
+
+app.use('/api', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
 
 app.get('/version', (_req, res) => {
   res.send('5')
