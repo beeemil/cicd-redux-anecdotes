@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-app.use('/api', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
+app.use('/api', createProxyMiddleware({ target: 'http://localhost:3001/anecdotes', changeOrigin: true }));
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
