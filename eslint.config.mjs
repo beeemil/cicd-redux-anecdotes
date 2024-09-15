@@ -15,7 +15,7 @@ export default [
   },
   pluginJs.configs.recommended,
   pluginReact.configs.flat.recommended,
-  {ignores: ['dist/', 'playwright.config.js', 'node_modules']},
+  {ignores: ['client/build/', 'playwright.config.js', 'node_modules']},
   {rules: {
     'react/prop-types':'off',
     'no-unused-vars': [
