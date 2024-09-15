@@ -5,7 +5,6 @@ export default defineConfig({
     command: 'npm run start',
     url: 'http://127.0.0.1:4173',
     timeout: 120 * 1000,
-    reuseExistingServer: !process.env.CI,
   },
   use: {
     baseURL: 'http://localhost:4173/',

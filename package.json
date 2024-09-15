@@ -2,6 +2,7 @@
   "name": "cicd-redux-anecdotes",
   "private": true,
   "version": "0.2.0",
+  "main": "src/main.jsx",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

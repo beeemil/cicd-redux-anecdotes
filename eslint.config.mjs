@@ -8,6 +8,7 @@ export default [
   {languageOptions: { globals: globals.browser }},
   pluginJs.configs.recommended,
   pluginReact.configs.flat.recommended,
+  {ignores: ['dist/']},
   {rules: {
     'react/prop-types':'off',
     'no-unused-vars': [
