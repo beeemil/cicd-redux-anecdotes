@@ -8,7 +8,7 @@ export default [
   {languageOptions: { globals: globals.browser }},
   pluginJs.configs.recommended,
   pluginReact.configs.flat.recommended,
-  {ignores: ['dist/']},
+  {ignores: ['dist/', 'playwright.config.js']},
   {rules: {
     'react/prop-types':'off',
     'no-unused-vars': [
