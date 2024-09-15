@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "test:e2e": "playwright test",
     "start": "concurrently \"node app.js\" \"npm run server\"",
-    "server": "json-server -p9200 --watch api/db.json"
+    "server": "json-server --watch api/db.json"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
