@@ -1,10 +1,13 @@
 const express = require('express')
-const path = require('path');
+const path = require('path')
+const jsonServer = require('json-server')
 
 const app = express()
 
 // get the port from env variable
 const PORT = process.env.PORT || 5000
+
+app.use('/api',jsonServer.router('api/db.json'))
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
