@@ -16,7 +16,7 @@ app.get('*', (req, res) => {
 });
 
 app.get('/version', (_req, res) => {
-  res.send('6')
+  res.send('7')
 })
 
 app.get('/health', (_req, res) => {
