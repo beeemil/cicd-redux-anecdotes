@@ -1,6 +1,5 @@
 import axios from 'axios'
-const PORT = process.env.PORT || 5000
-const baseUrl = `http://localhost:${PORT}/api/anecdotes`
+const baseUrl = `api/anecdotes`
 
 const getAll = async () => {
   const response = await axios.get(baseUrl)
